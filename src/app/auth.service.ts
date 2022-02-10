@@ -16,7 +16,7 @@ export class AuthService{
     return new Promise(res=>{
       setTimeout(()=>{
         res(this.isAuth)
-      },1000)
+      },100)
     })
   }
 }

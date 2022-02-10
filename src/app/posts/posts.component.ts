@@ -10,12 +10,12 @@ import {PostsService} from '../posts.service'
 export class PostsComponent implements OnInit {
   showId = false;
 
-  constructor(public postsService: PostsService
-    ,public route : ActivatedRoute
-    ) {}
-    ngOnInit(){
+  constructor(public postsService: PostsService, public route : ActivatedRoute)
+  {    }
+
+  ngOnInit(){
       this.route.queryParams.subscribe((p)=>{
-      this.showId = !!p.showId
+        this.showId = !!p.showId
       })
     }
 }
